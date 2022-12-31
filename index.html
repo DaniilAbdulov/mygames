@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My games</title>
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: rgb(1, 1, 1);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.head {
+  height: 50px;
+  width: 100%;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+.head__title {
+  color: #e7e7e7;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.content {
+  flex: 1 1 auto;
+  background-color: rgb(4, 4, 4);
+  margin: 0px 0px 20px 0px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 578px) {
+  .cards__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  width: 250px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 15px;
+  position: relative;
+  margin: 0 5px 30px 5px;
+}
+.card:hover {
+  box-shadow: 0 0 3px 3px white;
+}
+.card .front, .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .back {
+  background: rgb(28, 26, 26);
+  transform: rotateY(-180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 15px;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card__image {
+  width: 175px;
+  height: 175px;
+  margin: 5px 5px 20px 5px;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.card .mg {
+  width: 120px;
+  height: 120px;
+  margin: 27.5px 0px 47.5px 0px;
+}
+.card__title {
+  color: #e7e7e7;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.foot {
+  padding: 30px 0px;
+  background-color: #202020;
+  color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot__title {
+  margin: 0px 0px 10px 0px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgb(2, 2, 2);
+  text-align: center;
+}
+
+.link {
+  display: flex;
+}
+@media (max-width: 490px) {
+  .link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.link a {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+@media (max-width: 490px) {
+  .link a {
+    margin: 5px 0px;
+  }
+}
+.link__image {
+  width: 35px;
+  height: 30px;
+  padding: 0 5px 0 0;
+}
+.link__image img {
+  width: 100%;
+}
+.link__text {
+  font-size: 12px;
+  color: #e7e7e7;
+  letter-spacing: 1px;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="head">
+            <div class="head__row">
+                <div class="head__title">
+                    <h1>My games</h1>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+                <div class="cards">
+                    <div class="cards__row">
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Alan wake.png" alt="">
+                                </div>
+                                <div class="card__title">Alan Wake</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/ac-1.webp" alt="">
+                                </div>
+                                <div class="card__title">Assassin’s creed</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/ac2.webp" alt="">
+                                </div>
+                                <div class="card__title">Assassin’s creed 2</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/ac-syndicate.jfif" alt="">
+                                </div>
+                                <div class="card__title">Assassin’s creed: Syndicate</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/ac-unity.jpg" alt="">
+                                </div>
+                                <div class="card__title">Assassin’s creed: Unity</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/BatmanArkham Asylum.jfif" alt="">
+                                </div>
+                                <div class="card__title">Batman: Arkham Asylum</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/BatmanArkham City.jpg" alt="">
+                                </div>
+                                <div class="card__title">Batman: Arkham City</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/BatmanArkham Knight.jpg">
+                                </div>
+                                <div class="card__title">Batman: Arkham Knight</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Call of Juarez Gunslinger.jpg" alt="">
+                                </div>
+                                <div class="card__title">Call of Juarez Gunslinger</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Control.jpg" alt="">
+                                </div>
+                                <div class="card__title">Control</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Counter-Strike.webp" alt="">
+                                </div>
+                                <div class="card__title">Counter-Strike</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Cs_cz_background.webp" alt="">
+                                </div>
+                                <div class="card__title">Counter-Strike:Condition-zero</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/CS-S_Box.jpg" alt="">
+                                </div>
+                                <div class="card__title">Counter-Strike:Source</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Death_Stranding_Poster.jpg" alt="">
+                                </div>
+                                <div class="card__title">Death Stranding</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Dxhr_box.jpg" alt="">
+                                </div>
+                                <div class="card__title">Deus Ex: Human Revolution</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Dishonored - Definitive Edition.jfif" alt="">
+                                </div>
+                                <div class="card__title">Dishonored - Definitive Edition</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Fallout_3_cover_art.webp" alt="">
+                                </div>
+                                <div class="card__title">Fallout 3</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Far_Cry_3_Box_Art_PC.jpeg" alt="">
+                                </div>
+                                <div class="card__title">Far Cry 3</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/fs19.jpg" alt="">
+                                </div>
+                                <div class="card__title">Farming Simulator 19</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/gta3.jfif" alt="">
+                                </div>
+                                <div class="card__title">GTA III</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/gta4.jpg" alt="">
+                                </div>
+                                <div class="card__title">GTA IV</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/gtasa.jpg" alt="">
+                                </div>
+                                <div class="card__title">GTA San Andreas</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/gtavc.jpg" alt="">
+                                </div>
+                                <div class="card__title">GTA Vice City</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/gta5.jpg" alt="">
+                                </div>
+                                <div class="card__title">GTA V</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Hitman_codename.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman: Codename 47</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Hitman_2_SA.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman 2: Silent Assassin</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Hitman_contracts.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman:Contracts</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/BloodMoney.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman:Blood Money</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Hitman_2015.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Обложка_Hitman_2_(2018).jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman 2</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Хитман-_Снайпер_челлендж.jpg" alt="">
+                                </div>
+                                <div class="card__title">Hitman:Sniper Challenge</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Lego_batman_cover.jpg" alt="">
+                                </div>
+                                <div class="card__title">LEGO Batman The Videogame</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/274px-Legobatman2.jpg" alt="">
+                                </div>
+                                <div class="card__title">LEGO Batman 2</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Lego_Batman_3_-_Beyond_Gotham_cover.jpg" alt="">
+                                </div>
+                                <div class="card__title">LEGO Batman 3</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/mafia.jpg" alt="">
+                                </div>
+                                <div class="card__title">Mafia</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Mafia_Definitive_Edition.jpg" alt="">
+                                </div>
+                                <div class="card__title">Mafia: Definitive Edition</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/MGSV_Ground_Zeroes_boxart.jpg" alt="">
+                                </div>
+                                <div class="card__title">Metal gear solid V Ground zeroes</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Обложка_Metal_Gear_Solid_V_The_Phantom_Pain.jpg" alt="">
+                                </div>
+                                <div class="card__title">Metal gear solid V The phantom pain</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/metro2033.png" alt="">
+                                </div>
+                                <div class="card__title">Metro 2033 Redux</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/metro_last_light.png" alt="">
+                                </div>
+                                <div class="card__title">Metro Last Night Redux</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/NBA2K21.jfif" alt="">
+                                </div>
+                                <div class="card__title">NBA 2K21</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/EGS_Outlast_.jfif" alt="">
+                                </div>
+                                <div class="card__title">Outlast</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/SRTT.jpg" alt="">
+                                </div>
+                                <div class="card__title">Saints Row The Third Remastered</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/EGS_STARWARSBattlefrontII.jpg" alt="">
+                                </div>
+                                <div class="card__title">Star Wars: Battlefront 2</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/The_Sims_4.jpeg" alt="">
+                                </div>
+                                <div class="card__title">The Sims 4</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Splinter_Cell_Blacklist_PC.jpeg" alt="">
+                                </div>
+                                <div class="card__title">Tom Clancy's Splinter Cell Blacklist</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/steam.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: abdulovdb2</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Watch_Dogs_-_PC.jpeg" alt="">
+                                </div>
+                                <div class="card__title">Watch Dogs</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="front">
+                                <div class="card__image">
+                                    <img src="./img/Watch_Dogs_2_cover.jpg" alt="">
+                                </div>
+                                <div class="card__title">Watch Dogs 2</div>
+                            </div>
+                            <div class="back">
+                                <div class="card__image mg mg">
+                                    <img src="./img/epic.svg" alt="">
+                                </div>
+                                <div class="card__title">Login: Notorious.ADB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="foot">
+            <div class="foot__row">
+                <div class="foot__body">
+                    <div class="foot__title">Designed by Daniil Abdulov</div>
+                    <ul class="link">
+                        <a href="https://github.com/DaniilAbdulov" target="_blank">
+                            <img src="./img/icons/🦆 icon _github_.png" alt=""class="link__image">
+                            <li class="link__text">GitHub</li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniil-abdulov-33517725b/" target="_blank">
+                            <img src="./img/icons/🦆 icon _linkedin_.png" alt=""class="link__image">
+                            <li class="link__text">Linkedin</li>
+                        </a>
+                        <a href="">
+                            <img src="./img/icons/🦆 icon _phone call_.png" alt=""class="link__image">
+                            <li class="link__text">8(922)0028666</li>
+                        </a>
+                        <a href="https://t.me/ABDULOVDB" target="_blank">
+                            <img src="./img/icons/icon-telegram.png" alt=""class="link__image">
+                            <li class="link__text">Telegram</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
