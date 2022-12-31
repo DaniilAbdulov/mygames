@@ -141,7 +141,7 @@ body {
   position: relative;
   margin: 0 5px 30px 5px;
 }
-.card:hover {
+.card:active {
   box-shadow: 0 0 3px 3px white;
 }
 .card .front, .card .back {
@@ -163,10 +163,10 @@ body {
           backface-visibility: hidden;
   border-radius: 15px;
 }
-.card:hover .back {
+.card:active .back {
   transform: rotateY(0deg);
 }
-.card:hover .front {
+.card:active .front {
   transform: rotateY(180deg);
 }
 .card__image {
