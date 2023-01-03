@@ -1,15 +1,27 @@
 .head {
-  height: 50px;
   width: 100%;
+  height: 70px;
   background-color: #202020;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 30px 0px;
 }
-.head__title {
+.head .head__row {
+  margin: auto;
+}
+.head .head__list {
+  display: flex;
+}
+.head .head__list a {
   color: #e7e7e7;
   font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 600;
+  text-decoration: none;
+}
+.head .head__list a:hover {
+  text-decoration: underline;
+}
+.head .head__list a:active {
+  color: #726f6f;
+}
+.head .head__list li {
+  padding: 0 10px;
 }
