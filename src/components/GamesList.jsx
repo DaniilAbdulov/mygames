@@ -1,17 +1,21 @@
 import games from "../data/games";
 import GameCard from "./GameCard";
 import "./GamesList.css";
+
 function GamesList() {
     return (
-        <ul className="games">
-            {games.length > 0 && (
-                <li>
-                    {games.map((game) => {
-                        return <GameCard game={game} key={game.id} />;
-                    })}
-                </li>
+        <div className="GamesList">
+            {games.length > 0 ? (
+                games.map((game) => {
+                    return <GameCard key={game.id} game={game} />;
+                })
+            ) : (
+                <>
+                    <p>No data</p>
+                </>
             )}
-        </ul>
+        </div>
     );
 }
+
 export default GamesList;

@@ -2,7 +2,7 @@ const games = [
     {
         id: 0,
         front: {
-            img: "",
+            img: "https://pic.rutubelist.ru/video/14/e1/14e12cf4d91902e4f892051a205f4904.jpg",
             title: "AlanWake",
         },
         login: "abdulovdb",
@@ -12,7 +12,7 @@ const games = [
         id: 1,
         front: {
             img: "",
-            title: "Assassin’screed",
+            title: "Assassin’s creed",
         },
         login: "abdulovdb",
         isFromSteam: true,
@@ -21,7 +21,7 @@ const games = [
         id: 2,
         front: {
             img: "",
-            title: "Assassin’screed2",
+            title: "Assassin’s creed 2",
         },
         login: "abdulovdb",
         isFromSteam: true,
@@ -30,7 +30,7 @@ const games = [
         id: 3,
         front: {
             img: "",
-            title: "Assassin’screed:Syndicate",
+            title: "Assassin’s creed: Syndicate",
         },
         login: "Notorious.ADB",
         isFromSteam: false,
@@ -39,7 +39,7 @@ const games = [
         id: 4,
         front: {
             img: "",
-            title: "Assassin’screed:Unity",
+            title: "Assassin’s creed: Unity",
         },
         login: "abdulovdb",
         isFromSteam: true,
@@ -48,7 +48,7 @@ const games = [
         id: 5,
         front: {
             img: "",
-            title: "Batman:ArkhamAsylum",
+            title: "Batman: Arkham Asylum",
         },
         login: "Notorious.ADB",
         isFromSteam: false,
@@ -57,7 +57,7 @@ const games = [
         id: 6,
         front: {
             img: "",
-            title: "Batman:ArkhamCity",
+            title: "Batman: Arkham City",
         },
         login: "Notorious.ADB",
         isFromSteam: false,
@@ -66,7 +66,7 @@ const games = [
         id: 7,
         front: {
             img: "",
-            title: "Batman:ArkhamKnight",
+            title: "Batman: Arkham Knight",
         },
         login: "Notorious.ADB",
         isFromSteam: false,
@@ -75,16 +75,7 @@ const games = [
         id: 8,
         front: {
             img: "",
-            title: "CallofJuarezGunslinger",
-        },
-        login: "abdulovdb",
-        isFromSteam: true,
-    },
-    {
-        id: 9,
-        front: {
-            img: "",
-            title: "CallofJuarezGunslinger",
+            title: "Call of Juarez Gunslinger",
         },
         login: "abdulovdb",
         isFromSteam: true,
@@ -103,7 +94,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Counter-Strike",
+            title: "Counter - Strike",
         },
 
         login: "abdulovdb",
@@ -117,7 +108,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Counter-Strike:Condition-zero",
+            title: "Counter - Strike: Condition-zero",
         },
 
         login: "abdulovdb",
@@ -131,7 +122,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Counter-Strike:Source",
+            title: "Counter - Strike: Source",
         },
 
         login: "abdulovdb",
@@ -145,7 +136,7 @@ const games = [
         front: {
             img: "",
 
-            title: "DeathStranding",
+            title: "Death Stranding",
         },
 
         login: "abdulovdb",
@@ -159,7 +150,7 @@ const games = [
         front: {
             img: "",
 
-            title: "DeusEx:HumanRevolution",
+            title: "Deus Ex: Human Revolution",
         },
 
         login: "abdulovdb",
@@ -173,7 +164,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Dishonored-DefinitiveEdition",
+            title: "Dishonored - Definitive Edition",
         },
 
         login: "abdulovdb",
@@ -187,7 +178,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Fallout3",
+            title: "Fallout 3",
         },
 
         login: "abdulovdb",
@@ -201,7 +192,7 @@ const games = [
         front: {
             img: "",
 
-            title: "FarCry3",
+            title: "Far Cry 3",
         },
 
         login: "abdulovdb",
@@ -215,7 +206,7 @@ const games = [
         front: {
             img: "",
 
-            title: "FarmingSimulator19",
+            title: "Farming Simulator 19",
         },
 
         login: "Notorious.ADB",
@@ -229,7 +220,7 @@ const games = [
         front: {
             img: "",
 
-            title: "GTAIII",
+            title: "GTA III",
         },
 
         login: "abdulovdb",
@@ -243,7 +234,7 @@ const games = [
         front: {
             img: "",
 
-            title: "GTAIV",
+            title: "GTA IV",
         },
 
         login: "abdulovdb",
@@ -257,7 +248,7 @@ const games = [
         front: {
             img: "",
 
-            title: "GTASanAndreas",
+            title: "GTA San Andreas",
         },
 
         login: "abdulovdb",
@@ -271,7 +262,7 @@ const games = [
         front: {
             img: "",
 
-            title: "GTAViceCity",
+            title: "GTA Vice City",
         },
 
         login: "abdulovdb",
@@ -285,7 +276,7 @@ const games = [
         front: {
             img: "",
 
-            title: "GTAV",
+            title: "GTA V",
         },
 
         login: "Notorious.ADB",
@@ -299,7 +290,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman:Codename47",
+            title: "Hitman: Codename 47",
         },
 
         login: "abdulovdb",
@@ -313,7 +304,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman2:SilentAssassin",
+            title: "Hitman 2: Silent Assassin",
         },
 
         login: "abdulovdb",
@@ -327,7 +318,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman:Contracts",
+            title: "Hitman: Contracts",
         },
 
         login: "abdulovdb",
@@ -341,7 +332,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman:BloodMoney",
+            title: "Hitman: Blood Money",
         },
 
         login: "abdulovdb",
@@ -369,7 +360,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman2",
+            title: "Hitman 2",
         },
 
         login: "abdulovdb",
@@ -383,7 +374,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Hitman:SniperChallenge",
+            title: "Hitman: Sniper Challenge",
         },
 
         login: "abdulovdb",
@@ -397,7 +388,7 @@ const games = [
         front: {
             img: "",
 
-            title: "LEGOBatmanTheVideogame",
+            title: "LEGO Batman The Videogame",
         },
 
         login: "Notorious.ADB",
@@ -411,7 +402,7 @@ const games = [
         front: {
             img: "",
 
-            title: "LEGOBatman2",
+            title: "LEGO Batman 2",
         },
 
         login: "Notorious.ADB",
@@ -425,7 +416,7 @@ const games = [
         front: {
             img: "",
 
-            title: "LEGOBatman3",
+            title: "LEGO Batman 3",
         },
 
         login: "Notorious.ADB",
@@ -453,7 +444,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Mafia:DefinitiveEdition",
+            title: "Mafia: Definitive Edition",
         },
 
         login: "Notorious.ADB",
@@ -467,7 +458,7 @@ const games = [
         front: {
             img: "",
 
-            title: "MetalgearsolidVGroundzeroes",
+            title: "Metal gear solid V Ground zeroes",
         },
 
         login: "abdulovdb",
@@ -481,7 +472,7 @@ const games = [
         front: {
             img: "",
 
-            title: "MetalgearsolidVThephantompain",
+            title: "Metal gear solid V The phantom pain",
         },
 
         login: "abdulovdb",
@@ -495,7 +486,7 @@ const games = [
         front: {
             img: "",
 
-            title: "Metro2033Redux",
+            title: "Metro 2033 Redux",
         },
 
         login: "Notorious.ADB",
@@ -509,7 +500,7 @@ const games = [
         front: {
             img: "",
 
-            title: "MetroLastNightRedux",
+            title: "Metro Last Night Redux",
         },
 
         login: "Notorious.ADB",
@@ -523,7 +514,7 @@ const games = [
         front: {
             img: "",
 
-            title: "NBA2K21",
+            title: "NBA 2K21",
         },
 
         login: "Notorious.ADB",
@@ -551,7 +542,7 @@ const games = [
         front: {
             img: "",
 
-            title: "SaintsRowTheThirdRemastered",
+            title: "Saints Row The Third Remastered",
         },
 
         login: "Notorious.ADB",
@@ -565,7 +556,7 @@ const games = [
         front: {
             img: "",
 
-            title: "StarWars:Battlefront2",
+            title: "Star Wars: Battlefront 2",
         },
 
         login: "Notorious.ADB",
@@ -579,7 +570,7 @@ const games = [
         front: {
             img: "",
 
-            title: "TheSims4",
+            title: "The Sims 4",
         },
 
         login: "abdulovdb",
@@ -589,43 +580,30 @@ const games = [
 
     {
         id: 47,
-
         front: {
             img: "",
-
-            title: 'TomClancy"sSplinterCellBlacklist',
+            title: `Tom Clancy's Splinter Cell Blacklist`,
         },
-
         login: "abdulovdb2",
-
         isFromSteam: true,
     },
-
     {
         id: 48,
-
         front: {
             img: "",
-
-            title: "WatchDogs",
+            title: "Watch Dogs",
         },
-
         login: "Notorious.ADB",
-
         isFromSteam: false,
     },
 
     {
         id: 49,
-
         front: {
             img: "",
-
-            title: "WatchDogs2",
+            title: "Watch Dogs2",
         },
-
         login: "Notorious.ADB",
-
         isFromSteam: false,
     },
 ];
