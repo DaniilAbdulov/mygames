@@ -24,7 +24,7 @@ function Up() {
             {scrollPosition > 150 ? (
                 <div className="up">
                     <button onClick={clickHandler}>
-                        <UpArrow />
+                        <UpArrow style={{ color: "black" }} />
                     </button>
                 </div>
             ) : (
