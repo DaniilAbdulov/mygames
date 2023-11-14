@@ -1,6 +1,5 @@
 .search {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
