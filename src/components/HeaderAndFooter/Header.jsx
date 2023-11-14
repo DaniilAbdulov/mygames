@@ -1,4 +1,4 @@
-import "./NavBarAndFooter.css";
+import "./HeaderAndFooter.css";
 function NavBar() {
     return (
         <header className="fh">

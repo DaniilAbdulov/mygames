@@ -18,6 +18,7 @@ body {
     padding: 10px;
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 .no__data {
     padding: 0px 0px 58% 0px;
@@ -53,4 +54,16 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+.up button {
+    display: inline-block;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #818080;
+    box-shadow: 0px 0px 1px 0px black;
+    z-index: 200;
 }

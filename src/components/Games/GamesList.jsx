@@ -1,10 +1,10 @@
-import games from "../../data/games";
+import games from "../../data/games.ts";
 import GameCard from "./GameCard";
 import "./GamesList.css";
 import kid from "../../asserts/kidwithgame.webp";
 function GamesList({ value }) {
     const filteredGames = games.filter((game) => {
-        const mathesTitle = game.front.title
+        const mathesTitle = game.title
             .toLowerCase()
             .includes(value.toLowerCase());
 

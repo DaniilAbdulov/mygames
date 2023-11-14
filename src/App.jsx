@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import GamesList from "./components/Games/GamesList";
-import NavBar from "./components/NavBarAndFooter/NavBar";
-import Footer from "./components/NavBarAndFooter/Footer";
+import Header from "./components/HeaderAndFooter/Header";
+import Footer from "./components/HeaderAndFooter/Footer";
 import SearchBar from "./components/UI/SearchBar";
+import Up from "./components/UI/Up";
 
 function App() {
     const [searchValue, setSearchValue] = useState("");
@@ -12,7 +13,7 @@ function App() {
     };
     return (
         <div className="App">
-            <NavBar />
+            <Header />
             <main className="main">
                 <div className="container">
                     <SearchBar
@@ -22,6 +23,7 @@ function App() {
                     <GamesList value={searchValue} />
                 </div>
             </main>
+            <Up />
             <Footer />
         </div>
     );
