@@ -3,7 +3,7 @@ const games = [
         id: 0,
         front: {
             img: "https://pic.rutubelist.ru/video/14/e1/14e12cf4d91902e4f892051a205f4904.jpg",
-            title: "AlanWake",
+            title: "Alan Wake",
         },
         login: "abdulovdb",
         isFromSteam: true,
