@@ -5,7 +5,7 @@ import { ReactComponent as Epic } from "../../asserts/icons/epic.svg";
 import noPhoto from "../../asserts/icons/no_photo.webp";
 
 function GameCard({ game }) {
-    const { front, isFromSteam, login } = game;
+    const { img,title, isFromSteam, login } = game;
     const [imgIsLoading, setImgIsLoading] = useState(false);
     const image = new Image();
     image.onload = () => {
@@ -14,7 +14,7 @@ function GameCard({ game }) {
     image.onerror = () => {
         console.log("Произошла ошибка при загрузке изображения.");
     };
-    image.src = front.img ? front.img : noPhoto;
+    image.src = img ? img : noPhoto;
     return (
         <div className="card">
             <div className="card__image">
@@ -26,7 +26,7 @@ function GameCard({ game }) {
                     </>
                 )}
             </div>
-            <div className="card__title">{front.title}</div>
+            <div className="card__title">{title}</div>
             <div className="card__info">
                 <div className="card__logo">
                     {isFromSteam ? <Steam /> : <Epic />}
