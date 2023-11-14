@@ -2,7 +2,7 @@ const games = [
     {
         id: 0,
         front: {
-            img: "https://pic.rutubelist.ru/video/14/e1/14e12cf4d91902e4f892051a205f4904.jpg",
+            img: "https://iwant.games/wp-content/uploads/alan-wake-thumb-400x600.jpg",
             title: "Alan Wake",
         },
         login: "abdulovdb",
@@ -11,7 +11,7 @@ const games = [
     {
         id: 1,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/assassins-creed-invictus-thumb-400x600.jpg",
             title: "Assassin’s creed",
         },
         login: "abdulovdb",
@@ -20,7 +20,7 @@ const games = [
     {
         id: 2,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/assassins-creed-2-thumb-400x600.jpg",
             title: "Assassin’s creed 2",
         },
         login: "abdulovdb",
@@ -29,7 +29,7 @@ const games = [
     {
         id: 3,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/assassins-creed-syndicate-thumb-400x600.jpg",
             title: "Assassin’s creed: Syndicate",
         },
         login: "Notorious.ADB",
@@ -38,7 +38,7 @@ const games = [
     {
         id: 4,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/assassins-creed-unity-thumb-400x600.jpg",
             title: "Assassin’s creed: Unity",
         },
         login: "abdulovdb",
@@ -47,7 +47,7 @@ const games = [
     {
         id: 5,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/batman-arkham-asylum-thumb-400x600.jpg",
             title: "Batman: Arkham Asylum",
         },
         login: "Notorious.ADB",
@@ -56,7 +56,7 @@ const games = [
     {
         id: 6,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/batman-arkham-city-thumb2-400x600.jpg",
             title: "Batman: Arkham City",
         },
         login: "Notorious.ADB",
@@ -65,7 +65,7 @@ const games = [
     {
         id: 7,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/batman-arkham-knight-thumb-400x600.jpg",
             title: "Batman: Arkham Knight",
         },
         login: "Notorious.ADB",
@@ -83,7 +83,7 @@ const games = [
     {
         id: 10,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/control-thumb-1-468x702.jpg",
             title: "Control",
         },
         login: "Notorious.ADB",
@@ -134,7 +134,7 @@ const games = [
         id: 14,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/death-stranding-thumb-400x600.jpg",
 
             title: "Death Stranding",
         },
@@ -148,7 +148,7 @@ const games = [
         id: 15,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/deus-ex-human-revolution-thumb-468x702.jpg",
 
             title: "Deus Ex: Human Revolution",
         },
@@ -162,7 +162,7 @@ const games = [
         id: 16,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/dishonored-thumb-400x600.jpg",
 
             title: "Dishonored - Definitive Edition",
         },
@@ -176,7 +176,7 @@ const games = [
         id: 17,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/fallout-3-thumb-400x600.jpg",
 
             title: "Fallout 3",
         },
@@ -204,7 +204,7 @@ const games = [
         id: 19,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/farming-simulator-19-thumb-400x600.jpg",
 
             title: "Farming Simulator 19",
         },
@@ -218,7 +218,7 @@ const games = [
         id: 20,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/grand-theft-auto-3-thumb-400x600.jpg",
 
             title: "GTA III",
         },
@@ -246,7 +246,7 @@ const games = [
         id: 22,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/gta-san-andreas-thumb-400x600.jpg",
 
             title: "GTA San Andreas",
         },
@@ -260,7 +260,7 @@ const games = [
         id: 23,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/gta-vice-city-thumb-400x600.jpg",
 
             title: "GTA Vice City",
         },
@@ -274,7 +274,7 @@ const games = [
         id: 24,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/grand-theft-auto-v-thumb-1-400x600.jpg",
 
             title: "GTA V",
         },
@@ -428,7 +428,7 @@ const games = [
         id: 35,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/mafia-thumb-400x600.jpg",
 
             title: "Mafia",
         },
@@ -442,7 +442,7 @@ const games = [
         id: 36,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/mafia-definitive-edition-2020-thumb-1-468x702.jpg",
 
             title: "Mafia: Definitive Edition",
         },
@@ -456,7 +456,7 @@ const games = [
         id: 37,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/Metal-Gear-Solid-Ground-Zeroes.jpg",
 
             title: "Metal gear solid V Ground zeroes",
         },
@@ -470,7 +470,7 @@ const games = [
         id: 38,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/Metal-Gear-Solid-5-The-Phantom-Pain.jpg",
 
             title: "Metal gear solid V The phantom pain",
         },
@@ -484,7 +484,7 @@ const games = [
         id: 39,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/metro-redux-thumb-400x600.jpg",
 
             title: "Metro 2033 Redux",
         },
@@ -498,7 +498,7 @@ const games = [
         id: 41,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/metro-last-light-thumb-400x600.jpg",
 
             title: "Metro Last Night Redux",
         },
@@ -512,7 +512,7 @@ const games = [
         id: 42,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/nba-2k21-thumb-400x600.jpg",
 
             title: "NBA 2K21",
         },
@@ -526,7 +526,7 @@ const games = [
         id: 43,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/outlast-thumb-400x600.jpg",
 
             title: "Outlast",
         },
@@ -540,7 +540,7 @@ const games = [
         id: 44,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/saints-row-the-third-remastered-thumb-400x600.jpg",
 
             title: "Saints Row The Third Remastered",
         },
@@ -568,7 +568,7 @@ const games = [
         id: 46,
 
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/the-sims-4-thumb-400x600.jpg",
 
             title: "The Sims 4",
         },
@@ -600,7 +600,7 @@ const games = [
     {
         id: 49,
         front: {
-            img: "",
+            img: "https://iwant.games/wp-content/uploads/watch-dogs-2-thumb-468x702.jpg",
             title: "Watch Dogs2",
         },
         login: "Notorious.ADB",
